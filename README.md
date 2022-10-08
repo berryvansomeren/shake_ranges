@@ -20,7 +20,7 @@ For minimal usage examples and comparisons to Python equivalents, see below.
 For more complete usage examples you could take a look at _unit_tests.hpp_ 
 or run the code online **[on Wandbox](https://wandbox.org/permlink/IAtDx7DerlCof5dc)**
 
-## index ranges
+## index range
 
 A python loop over integers or indices like the following:
 ```python3
@@ -36,7 +36,7 @@ for ( const auto& i : range( 10 ) )
 }
 ```
 
-## step ranges
+## step range
 
 A python loop stepping through a list like the following:
 ```python3
@@ -52,7 +52,7 @@ for ( const auto& v : step( l, 5 ) )
 }
 ```
 
-## combine ranges
+## combine range
 
 A python loop zipping two list like the following:
 ```python3
@@ -68,7 +68,7 @@ for ( const auto& [ v1, v2 ] : combine( l1, l2 ) )
 }
 ```
 
-## enumerate ranges
+## enumerate range
 
 A python loop stepping through a list like the following:
 ```python3
@@ -84,7 +84,7 @@ for ( const auto& [ i, v ] : enumerate( l ) )
 }
 ```
 
-## map ranges
+## map range
 
 A python loop over the keys of a dict like the following:
 ```python3
@@ -115,7 +115,7 @@ for ( const auto& key : values( map ) )
 ```
 
 
-## transform ranges
+## transform range
 
 A python generator like the following:
 ```python3
@@ -142,7 +142,7 @@ for ( const std::string& s : generator_range )
 }
 ```
 
-## any ranges
+## any range
 
 Because python is a weakly typed language it is easy to only specify partial requirements on types.
 On the other hand, c++ is strongly typed but offers parametric polymorphism through templates.
@@ -174,6 +174,3 @@ void consume_any_string_range( AnyRange<std::string> string_range )
 auto any_range = make_any_range(generator_range);
 consume_any_string_range( any_range );
 ```
-
-
-
